@@ -1,0 +1,1 @@
+print('{} eh o maior'.format(max([int(n) for n in input().split()])))
