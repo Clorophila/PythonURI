@@ -3,20 +3,18 @@ def busca_binaria(lista,item):
         return 0
     inicio = 0
     final = len(lista)-1
-    while inicio < final:
+    while inicio <= final:
         meio = (inicio+final)//2
         if lista[meio] == item:
             break
         elif lista[meio] > item:
-            final = meio
+            final = meio-1
         elif lista[meio] < item:
             inicio = meio+1
-    if lista[-1]==item:
-        meio == len(lista)-1
     if lista[meio] == item:
-        while lista[meio] == item:
+        while lista[meio-1] == item:
             meio -= 1
-        return meio+1
+        return meio
     else:
         raise ValueError
 
