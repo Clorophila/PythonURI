@@ -9,7 +9,7 @@ for l in range(T):
     aux = []
     for c in range(T):
         aux.append(float(input()))
-        if (c<l) and (c>(T-l-1)):
+        if (c>l) and (c<(T-l-1)):
             soma+=aux[c]
             elementos+=1
     mat.append(aux)
