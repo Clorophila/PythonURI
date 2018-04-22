@@ -1,5 +1,4 @@
-numeros = []
-for case in range(100):
-    numeros.append(int(input()))
-print(max(numeros))
-print(1+numeros.index(max(numeros)))
+n = int(input())
+numeros = list(map(int,input().split()))
+print('Menor valor: {}'.format(min(numeros)))
+print('Posicao: {}'.format(numeros.index(min(numeros))))
